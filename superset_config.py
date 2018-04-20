@@ -1,16 +1,16 @@
 import os
-#---------------------------------------------------------
+# ---------------------------------------------------------
 # Superset specific config
-#---------------------------------------------------------
+# ---------------------------------------------------------
 # ROW_LIMIT = 5000
-SUPERSET_WORKERS = 1 # for it to work in heroku basic/hobby dynos increase as you like
+SUPERSET_WORKERS = 1  # for it to work in heroku basic/hobby dynos increase as you like
 
 # SUPERSET_WEBSERVER_PORT = 8088
-#---------------------------------------------------------
+# ---------------------------------------------------------
 
-#---------------------------------------------------------
+# ---------------------------------------------------------
 # Flask App Builder configuration
-#---------------------------------------------------------
+# ---------------------------------------------------------
 # Your App secret key
 SECRET_KEY = '\2\1thisismyscretkey\1\2\e\y\y\h'  # noqa
 
@@ -23,3 +23,6 @@ SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 
 # Flask-WTF flag for CSRF
 CSRF_ENABLED = True
+
+# Set this API key to enable Mapbox visualizations
+MAPBOX_API_KEY = "pk.eyJ1IjoibGVzbGllMzAwMCIsImEiOiJjamZhdzViMXgxNzN2MndvYjhyd3JzcHJlIn0.kUfyoE5TxCxXvK5M4vk2Iw"
