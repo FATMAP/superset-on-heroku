@@ -1,6 +1,6 @@
 # [superset](https://github.com/apache/incubator-superset) on [Heroku](http://heroku.com)
 
-Superset is a data exploration platform designed to be visual, intuitive, and interactive. Visit the project's website at <http://airbnb.io/superset>
+Superset is a data exploration platform designed to be visual, intuitive, and interactive. Visit the project's website at <https://superset.incubator.apache.org/>
 
 ## Deploying on Heroku
 
