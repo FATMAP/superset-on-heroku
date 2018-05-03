@@ -3,7 +3,7 @@ import os
 # Superset specific config
 # ---------------------------------------------------------
 # ROW_LIMIT = 5000
-SUPERSET_WORKERS = 1  # for it to work in heroku basic/hobby dynos increase as you like
+SUPERSET_WORKERS = 2  # for it to work in heroku basic/hobby dynos increase as you like
 
 # SUPERSET_WEBSERVER_PORT = 8088
 # ---------------------------------------------------------
@@ -26,3 +26,6 @@ CSRF_ENABLED = True
 
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = "pk.eyJ1IjoibGVzbGllMzAwMCIsImEiOiJjamZhdzViMXgxNzN2MndvYjhyd3JzcHJlIn0.kUfyoE5TxCxXvK5M4vk2Iw"
+
+#Timeout
+SQLLAB_ASYNC_TIME_LIMIT_SEC = 60 * 60 * 6
